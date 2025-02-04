@@ -1,15 +1,15 @@
 using UnityEngine;
 
-namespace Reflectis.SDK.Core.Diagnostics
+namespace Reflectis.CreatorKit.Worlds.Analytics
 {
-    public class DiagnosticDTO
+    public class AnalyticDTO
     {
-        [SerializeField] private EDiagnosticVerb verb;
+        [SerializeField] private EAnalyticVerb verb;
         [SerializeField] private int eventId;
 
         [SerializeField][SettableField] public object customAttributes;
 
-        public EDiagnosticVerb Verb { get => verb; set => verb = value; }
+        public EAnalyticVerb Verb { get => verb; set => verb = value; }
         public int EventId { get => eventId; set => eventId = value; }
     }
 }

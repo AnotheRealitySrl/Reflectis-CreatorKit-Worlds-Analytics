@@ -1,5 +1,5 @@
 using Reflectis.SDK.Core.SystemFramework;
-using Reflectis.SDK.Core.Diagnostics;
+using Reflectis.CreatorKit.Worlds.Analytics;
 
 using System;
 using System.Collections.Generic;
@@ -13,20 +13,20 @@ using UnityEngine;
 namespace Reflectis.CreatorKit.Worlds.VisualScripting
 {
     [UnitTitle(UNIT_TITLE)]
-    [UnitSurtitle("Reflectis Diagnostic")]
+    [UnitSurtitle("Reflectis Analytic")]
     [UnitShortTitle("Send Data")]
     [UnitCategory("Reflectis\\Flow")]
-    public class DiagnosticSendDataUnit : Unit
+    public class AnalyticSendDataUnit : Unit
     {
 
-        public const string UNIT_TITLE = "Reflectis Diagnostic: Send Data";
+        public const string UNIT_TITLE = "Reflectis Analytic: Send Data";
 
         [SerializeAs(nameof(Verb))]
-        private EDiagnosticVerb verb = EDiagnosticVerb.ExpStart;
+        private EAnalyticVerb verb = EAnalyticVerb.ExpStart;
 
         [DoNotSerialize]
         [Inspectable, UnitHeaderInspectable(nameof(verb))]
-        public EDiagnosticVerb Verb
+        public EAnalyticVerb Verb
         {
             get => verb;
             set => verb = value;
@@ -75,7 +75,7 @@ namespace Reflectis.CreatorKit.Worlds.VisualScripting
                 //    return f.GetConvertedValue(x) as CustomType;
                 //});
 
-                Type type = IDiagnosticsSystem.VerbsDTOs[Verb];
+                Type type = IAnalyticsSystem.VerbsDTOs[Verb];
 
                 if (type != null)
                 {
@@ -93,18 +93,18 @@ namespace Reflectis.CreatorKit.Worlds.VisualScripting
                             }
                         }
                     }
-                    DiagnosticDTO diagnosticDTO = typeInstance as DiagnosticDTO;
+                    AnalyticDTO AnalyticDTO = typeInstance as AnalyticDTO;
                     try
                     {
-                        SM.GetSystem<IDiagnosticsSystem>().SendDiagnostic(Verb, diagnosticDTO);
+                        SM.GetSystem<IAnalyticsSystem>().SendAnalytic(Verb, AnalyticDTO);
                     }
                     catch (Exception exception)
                     {
                         string message = $"Error during execution of \"{UNIT_TITLE}\" on gameObject {gameObject}: {exception.Message} ";
-                        if (IDiagnosticsSystem.VerbsTypes[EDiagnosticType.Experience].Contains(Verb))
+                        if (IAnalyticsSystem.VerbsTypes[EAnalyticType.Experience].Contains(Verb))
                         {
                             message = message +
-                            $"Remember to call the node {DiagnosticGenerateExperienceIDUnit.UNIT_TITLE} to generate the ExperienceID before trying to send diagnostics data!";
+                            $"Remember to call the node {AnalyticGenerateExperienceIDUnit.UNIT_TITLE} to generate the ExperienceID before trying to send Analytics data!";
                         }
                         Debug.LogError(message, gameObject);
                     }
@@ -121,7 +121,7 @@ namespace Reflectis.CreatorKit.Worlds.VisualScripting
 
             Arguments = new List<ValueInput>();
 
-            Type type = IDiagnosticsSystem.VerbsDTOs[Verb];
+            Type type = IAnalyticsSystem.VerbsDTOs[Verb];
 
             if (type != null)
             {

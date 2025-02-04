@@ -1,5 +1,5 @@
 using Reflectis.SDK.Core.SystemFramework;
-using Reflectis.SDK.Core.Diagnostics;
+using Reflectis.CreatorKit.Worlds.Analytics;
 using Reflectis.SDK.Core.VisualScripting;
 
 using System.Threading.Tasks;
@@ -11,12 +11,12 @@ using UnityEngine;
 namespace Reflectis.CreatorKit.Worlds.VisualScripting
 {
     [UnitTitle(UNIT_TITLE)]
-    [UnitSurtitle("Reflectis Diagnostic")]
+    [UnitSurtitle("Reflectis Analytic")]
     [UnitShortTitle("Generate ExperienceID")]
     [UnitCategory("Reflectis\\Flow")]
-    public class DiagnosticGenerateExperienceIDUnit : AwaitableUnit
+    public class AnalyticGenerateExperienceIDUnit : AwaitableUnit
     {
-        public const string UNIT_TITLE = "Reflectis Diagnostic: Generate ExperienceID";
+        public const string UNIT_TITLE = "Reflectis Analytic: Generate ExperienceID";
 
         private const int MAX_KEY_LENGTH = 15;
 
@@ -45,7 +45,7 @@ namespace Reflectis.CreatorKit.Worlds.VisualScripting
             }
             else
             {
-                await SM.GetSystem<IDiagnosticsSystem>().GenerateExperienceGUID(desiredKey);
+                await SM.GetSystem<IAnalyticsSystem>().GenerateExperienceGUID(desiredKey);
             }
         }
 

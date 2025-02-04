@@ -1,6 +1,6 @@
-namespace Reflectis.SDK.Core.Diagnostics
+namespace Reflectis.CreatorKit.Worlds.Analytics
 {
-    public class ExperienceCompleteDTO : ExperienceDiagnosticDTO
+    public class ExperienceCompleteDTO : ExperienceAnalyticDTO
     {
         [SettableField]
         public int score;

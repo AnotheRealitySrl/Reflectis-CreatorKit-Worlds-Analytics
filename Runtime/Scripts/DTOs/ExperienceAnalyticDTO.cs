@@ -1,6 +1,6 @@
-namespace Reflectis.SDK.Core.Diagnostics
+namespace Reflectis.CreatorKit.Worlds.Analytics
 {
-    public abstract class ExperienceDiagnosticDTO : DiagnosticDTO
+    public abstract class ExperienceAnalyticDTO : AnalyticDTO
     {
         [SettableField(isRequired = true)]
         protected string key;

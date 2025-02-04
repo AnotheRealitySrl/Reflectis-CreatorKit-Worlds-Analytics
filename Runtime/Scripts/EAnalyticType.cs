@@ -1,7 +1,7 @@
 namespace Reflectis.CreatorKit.Worlds.Analytics
 {
-    public enum EAnalyticsDisplayableType
+    public enum EAnalyticType
     {
-        Dynamic,
+        Experience
     }
 }

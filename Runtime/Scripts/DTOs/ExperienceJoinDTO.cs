@@ -1,6 +1,6 @@
-namespace Reflectis.SDK.Core.Diagnostics
+namespace Reflectis.CreatorKit.Worlds.Analytics
 {
-    public class ExperienceJoinDTO : ExperienceDiagnosticDTO
+    public class ExperienceJoinDTO : ExperienceAnalyticDTO
     {
         [SettableField(isRequired = true)]
         public string context;

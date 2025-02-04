@@ -1,4 +1,4 @@
-namespace Reflectis.SDK.Core.Diagnostics
+namespace Reflectis.CreatorKit.Worlds.Analytics
 {
     public enum EExperienceScoringType
     {

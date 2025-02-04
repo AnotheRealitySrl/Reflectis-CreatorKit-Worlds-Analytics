@@ -2,7 +2,7 @@ using Reflectis.SDK.Core.Utilities;
 
 using System.Collections.Generic;
 
-namespace Reflectis.SDK.Core.Diagnostics
+namespace Reflectis.CreatorKit.Worlds.Analytics
 {
     public abstract class DisplayableContentBase
     {

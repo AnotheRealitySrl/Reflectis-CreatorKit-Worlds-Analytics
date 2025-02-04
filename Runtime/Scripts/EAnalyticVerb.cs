@@ -1,6 +1,6 @@
-namespace Reflectis.SDK.Core.Diagnostics
+namespace Reflectis.CreatorKit.Worlds.Analytics
 {
-    public enum EDiagnosticVerb
+    public enum EAnalyticVerb
     {
         ExpJoin = 1,
         ExpStart,

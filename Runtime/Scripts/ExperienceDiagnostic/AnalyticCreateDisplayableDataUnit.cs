@@ -1,4 +1,4 @@
-using Reflectis.SDK.Core.Diagnostics;
+using Reflectis.CreatorKit.Worlds.Analytics;
 using Reflectis.SDK.Core.Utilities;
 
 using System;
@@ -12,10 +12,10 @@ using UnityEngine;
 namespace Reflectis.CreatorKit.Worlds.VisualScripting
 {
     [UnitTitle(UNIT_TITLE)]
-    [UnitSurtitle("Reflectis Diagnostic")]
+    [UnitSurtitle("Reflectis Analytic")]
     [UnitShortTitle("Create Displayable Data")]
     [UnitCategory("Reflectis\\Create")]
-    public class DiagnosticCreateDisplayableDataUnit : Unit
+    public class AnalyticCreateDisplayableDataUnit : Unit
     {
 
         [SerializeAs(nameof(DisplayableType))]
@@ -29,7 +29,7 @@ namespace Reflectis.CreatorKit.Worlds.VisualScripting
             set => displayableType = value;
         }
 
-        public const string UNIT_TITLE = "Reflectis Diagnostic: Create Displayable Data";
+        public const string UNIT_TITLE = "Reflectis Analytic: Create Displayable Data";
 
 
         [DoNotSerialize]
@@ -57,7 +57,7 @@ namespace Reflectis.CreatorKit.Worlds.VisualScripting
                 //    return f.GetConvertedValue(x) as CustomType;
                 //});
 
-                Type type = IDiagnosticsSystem.DisplayableDataTypes[displayableType];
+                Type type = IAnalyticsSystem.DisplayableDataTypes[displayableType];
 
                 if (type != null)
                 {
@@ -92,13 +92,13 @@ namespace Reflectis.CreatorKit.Worlds.VisualScripting
                     else
                     {
                         Debug.LogError("Wrong type assigned to the value: " +
-                        displayableType + "! Check the correct setup of the Diagnostic system. ");
+                        displayableType + "! Check the correct setup of the Analytic system. ");
                     }
                 }
                 else
                 {
                     Debug.LogError("There are no Displayable content class rapresenting the given type: " +
-                        displayableType + "! Check the correct setup of the Diagnostic system. ");
+                        displayableType + "! Check the correct setup of the Analytic system. ");
                 }
 
                 return null;
@@ -107,7 +107,7 @@ namespace Reflectis.CreatorKit.Worlds.VisualScripting
 
             Arguments = new List<ValueInput>();
 
-            Type type = IDiagnosticsSystem.DisplayableDataTypes[displayableType];
+            Type type = IAnalyticsSystem.DisplayableDataTypes[displayableType];
 
             if (type != null)
             {

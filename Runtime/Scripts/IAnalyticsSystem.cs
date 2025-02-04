@@ -4,54 +4,54 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Reflectis.SDK.Core.Diagnostics
+namespace Reflectis.CreatorKit.Worlds.Analytics
 {
     public interface
 
-        IDiagnosticsSystem : ISystem
+        IAnalyticsSystem : ISystem
     {
-        public static Dictionary<EDiagnosticType, List<EDiagnosticVerb>> VerbsTypes =
-            new Dictionary<EDiagnosticType, List<EDiagnosticVerb>>
+        public static Dictionary<EAnalyticType, List<EAnalyticVerb>> VerbsTypes =
+            new Dictionary<EAnalyticType, List<EAnalyticVerb>>
             {
                 {
-                    EDiagnosticType.Experience,
-                    new List<EDiagnosticVerb>
+                    EAnalyticType.Experience,
+                    new List<EAnalyticVerb>
                     {
-                        EDiagnosticVerb.ExpJoin,
-                        EDiagnosticVerb.ExpStart,
-                        EDiagnosticVerb.ExpComplete,
-                        EDiagnosticVerb.StepStart,
-                        EDiagnosticVerb.StepComplete,
-                        EDiagnosticVerb.ExpTranscript
+                        EAnalyticVerb.ExpJoin,
+                        EAnalyticVerb.ExpStart,
+                        EAnalyticVerb.ExpComplete,
+                        EAnalyticVerb.StepStart,
+                        EAnalyticVerb.StepComplete,
+                        EAnalyticVerb.ExpTranscript
                     }
                 }
             };
 
-        public static Dictionary<EDiagnosticVerb, Type> VerbsDTOs =
-            new Dictionary<EDiagnosticVerb, Type>
+        public static Dictionary<EAnalyticVerb, Type> VerbsDTOs =
+            new Dictionary<EAnalyticVerb, Type>
             {
                 {
-                    EDiagnosticVerb.ExpJoin,
+                    EAnalyticVerb.ExpJoin,
                     typeof(ExperienceJoinDTO)
                 },
                 {
-                    EDiagnosticVerb.ExpStart,
+                    EAnalyticVerb.ExpStart,
                     typeof(ExperienceStartDTO)
                 },
                 {
-                    EDiagnosticVerb.ExpComplete,
+                    EAnalyticVerb.ExpComplete,
                     typeof(ExperienceCompleteDTO)
                 },
                 {
-                    EDiagnosticVerb.StepStart,
+                    EAnalyticVerb.StepStart,
                     typeof(ExperienceStepStartDTO)
                 },
                 {
-                    EDiagnosticVerb.StepComplete,
+                    EAnalyticVerb.StepComplete,
                     typeof(ExperienceStepCompleteDTO)
                 },
                 {
-                    EDiagnosticVerb.ExpTranscript,
+                    EAnalyticVerb.ExpTranscript,
                     typeof(ExperienceTranscriptDTO)
                 },
             };
@@ -67,6 +67,6 @@ namespace Reflectis.SDK.Core.Diagnostics
 
         Task GenerateExperienceGUID(string key);
 
-        void SendDiagnostic(EDiagnosticVerb verb, DiagnosticDTO diagnosticDTO);
+        void SendAnalytic(EAnalyticVerb verb, AnalyticDTO AnalyticDTO);
     }
 }
