@@ -10,7 +10,7 @@ using Unity.VisualScripting;
 
 using UnityEngine;
 
-namespace Reflectis.CreatorKit.Worlds.VisualScripting
+namespace Reflectis.CreatorKit.Worlds.Analytics
 {
     [UnitTitle(UNIT_TITLE)]
     [UnitSurtitle("Reflectis Analytic")]
