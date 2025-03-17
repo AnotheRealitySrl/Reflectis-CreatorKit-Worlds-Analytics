@@ -1,5 +1,4 @@
 using Reflectis.SDK.Core.SystemFramework;
-using Reflectis.CreatorKit.Worlds.Analytics;
 
 using System;
 using System.Collections.Generic;
@@ -24,12 +23,23 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
         [SerializeAs(nameof(Verb))]
         private EAnalyticVerb verb = EAnalyticVerb.ExpStart;
 
+        [SerializeAs(nameof(SendToXAPI))]
+        private bool sendToXAPI = false;
+
         [DoNotSerialize]
         [Inspectable, UnitHeaderInspectable(nameof(verb))]
         public EAnalyticVerb Verb
         {
             get => verb;
             set => verb = value;
+        }
+
+        [DoNotSerialize]
+        [Inspectable, UnitHeaderInspectable(nameof(sendToXAPI))]
+        public bool SendToXAPI
+        {
+            get => sendToXAPI;
+            set => sendToXAPI = value;
         }
 
         //[SerializeAs(nameof(CustomEntriesCount))]
@@ -46,6 +56,8 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
 
         [DoNotSerialize]
         public List<ValueInput> Arguments { get; private set; }
+        [DoNotSerialize]
+        public List<ValueInput> XAPIArguments { get; private set; }
 
         //[DoNotSerialize]
         //public List<ValueInput> CustomObjects { get; private set; }
@@ -94,6 +106,13 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
                         }
                     }
                     AnalyticDTO AnalyticDTO = typeInstance as AnalyticDTO;
+                    if (sendToXAPI)
+                    {
+                        var xapiVerb = f.GetConvertedValue(XAPIArguments[0]) as XAPIVerb;
+                        var xapiObject = f.GetConvertedValue(XAPIArguments[1]) as XAPIObject;
+                        AnalyticDTO.XApiVerb = xapiVerb;
+                        AnalyticDTO.XApiObject = xapiObject;
+                    }
                     try
                     {
                         SM.GetSystem<IAnalyticsSystem>().SendAnalytic(Verb, AnalyticDTO);
@@ -160,6 +179,17 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
                         }
                     }
                 }
+            }
+
+            if (sendToXAPI)
+            {
+                XAPIArguments = new List<ValueInput>();
+                ValueInput xapiVerb = ValueInput(typeof(XAPIVerb), "XAPIVerb");
+                XAPIArguments.Add(xapiVerb);
+                Requirement(xapiVerb, InputTrigger);
+                ValueInput xapiObject = ValueInput(typeof(XAPIObject), "XAPIObject");
+                XAPIArguments.Add(xapiObject);
+                Requirement(xapiObject, InputTrigger);
             }
 
             //CustomObjects = new List<ValueInput>();
