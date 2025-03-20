@@ -5,9 +5,11 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
 {
     [Serializable]
     [Newtonsoft.Json.JsonObject(Newtonsoft.Json.MemberSerialization.Fields)]
-    public class XAPIObject
+    public class XAPIStatement
     {
-        [SerializeField] private string id;
-        [SerializeField] private string label;
+        [SerializeField]
+        private XAPIVerb xApiVerb;
+        [SerializeField]
+        private XAPIObject xApiObject;
     }
 }

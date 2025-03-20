@@ -8,5 +8,6 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
     public class XAPIVerb
     {
         [SerializeField] private string id;
+        [SerializeField] private string label;
     }
 }

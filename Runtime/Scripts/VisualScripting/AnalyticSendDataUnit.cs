@@ -42,17 +42,6 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
             set => sendToXAPI = value;
         }
 
-        //[SerializeAs(nameof(CustomEntriesCount))]
-        //private int customEntriesCount;
-
-        //[DoNotSerialize]
-        //[Inspectable, UnitHeaderInspectable("Custom entries")]
-        //public int CustomEntriesCount
-        //{
-        //    get => customEntriesCount;
-        //    set => customEntriesCount = value;
-        //}
-
 
         [DoNotSerialize]
         public List<ValueInput> Arguments { get; private set; }
@@ -108,10 +97,17 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
                     AnalyticDTO AnalyticDTO = typeInstance as AnalyticDTO;
                     if (sendToXAPI)
                     {
-                        var xapiVerb = f.GetConvertedValue(XAPIArguments[0]) as XAPIVerb;
-                        var xapiObject = f.GetConvertedValue(XAPIArguments[1]) as XAPIObject;
-                        AnalyticDTO.XApiVerb = xapiVerb;
-                        AnalyticDTO.XApiObject = xapiObject;
+                        ValueInput contextInput = Arguments.FirstOrDefault(x => x.key == "context");
+                        if (contextInput == null)
+                        {
+                            contextInput = XAPIArguments.FirstOrDefault(x => x.key == "context");
+                        }
+                        var context = f.GetConvertedValue(contextInput) as string;
+                        AnalyticDTO.Context = context;
+                        var xapiStatement = f.GetConvertedValue(XAPIArguments.FirstOrDefault(x => x.key == "statement")) as XAPIStatement;
+                        AnalyticDTO.Statement = xapiStatement;
+                        //var locale = f.GetConvertedValue(XAPIArguments.FirstOrDefault(x => x.key == "locale")) as string;
+                        //AnalyticDTO.Locale = locale;
                     }
                     try
                     {
@@ -184,12 +180,19 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
             if (sendToXAPI)
             {
                 XAPIArguments = new List<ValueInput>();
-                ValueInput xapiVerb = ValueInput(typeof(XAPIVerb), "XAPIVerb");
+                ValueInput xapiVerb = ValueInput(typeof(XAPIStatement), "statement");
                 XAPIArguments.Add(xapiVerb);
                 Requirement(xapiVerb, InputTrigger);
-                ValueInput xapiObject = ValueInput(typeof(XAPIObject), "XAPIObject");
-                XAPIArguments.Add(xapiObject);
-                Requirement(xapiObject, InputTrigger);
+                //ValueInput locale = ValueInput(typeof(string), "locale");
+                //XAPIArguments.Add(locale);
+                //Requirement(locale, InputTrigger);
+                ValueInput contextInput = Arguments.FirstOrDefault(x => x.key == "context");
+                if (contextInput == null)
+                {
+                    contextInput = ValueInput(typeof(string), "context");
+                    XAPIArguments.Add(contextInput);
+                }
+                Requirement(contextInput, InputTrigger);
             }
 
             //CustomObjects = new List<ValueInput>();
