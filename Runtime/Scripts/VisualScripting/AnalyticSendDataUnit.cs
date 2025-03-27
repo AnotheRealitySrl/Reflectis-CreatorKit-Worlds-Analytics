@@ -1,5 +1,4 @@
 using Reflectis.SDK.Core.SystemFramework;
-using Reflectis.CreatorKit.Worlds.Analytics;
 
 using System;
 using System.Collections.Generic;
@@ -24,6 +23,9 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
         [SerializeAs(nameof(Verb))]
         private EAnalyticVerb verb = EAnalyticVerb.ExpStart;
 
+        [SerializeAs(nameof(SendToXAPI))]
+        private bool sendToXAPI = false;
+
         [DoNotSerialize]
         [Inspectable, UnitHeaderInspectable(nameof(verb))]
         public EAnalyticVerb Verb
@@ -32,20 +34,19 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
             set => verb = value;
         }
 
-        //[SerializeAs(nameof(CustomEntriesCount))]
-        //private int customEntriesCount;
-
-        //[DoNotSerialize]
-        //[Inspectable, UnitHeaderInspectable("Custom entries")]
-        //public int CustomEntriesCount
-        //{
-        //    get => customEntriesCount;
-        //    set => customEntriesCount = value;
-        //}
+        [DoNotSerialize]
+        [Inspectable, UnitHeaderInspectable(nameof(sendToXAPI))]
+        public bool SendToXAPI
+        {
+            get => sendToXAPI;
+            set => sendToXAPI = value;
+        }
 
 
         [DoNotSerialize]
         public List<ValueInput> Arguments { get; private set; }
+        [DoNotSerialize]
+        public List<ValueInput> XAPIArguments { get; private set; }
 
         //[DoNotSerialize]
         //public List<ValueInput> CustomObjects { get; private set; }
@@ -94,6 +95,20 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
                         }
                     }
                     AnalyticDTO AnalyticDTO = typeInstance as AnalyticDTO;
+                    if (sendToXAPI)
+                    {
+                        ValueInput contextInput = Arguments.FirstOrDefault(x => x.key == "context");
+                        if (contextInput == null)
+                        {
+                            contextInput = XAPIArguments.FirstOrDefault(x => x.key == "context");
+                        }
+                        var context = f.GetConvertedValue(contextInput) as string;
+                        AnalyticDTO.Context = context;
+                        var xapiStatement = f.GetConvertedValue(XAPIArguments.FirstOrDefault(x => x.key == "statement")) as XAPIStatement;
+                        AnalyticDTO.Statement = xapiStatement;
+                        //var locale = f.GetConvertedValue(XAPIArguments.FirstOrDefault(x => x.key == "locale")) as string;
+                        //AnalyticDTO.Locale = locale;
+                    }
                     try
                     {
                         SM.GetSystem<IAnalyticsSystem>().SendAnalytic(Verb, AnalyticDTO);
@@ -160,6 +175,24 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
                         }
                     }
                 }
+            }
+
+            if (sendToXAPI)
+            {
+                XAPIArguments = new List<ValueInput>();
+                ValueInput xapiVerb = ValueInput(typeof(XAPIStatement), "statement");
+                XAPIArguments.Add(xapiVerb);
+                Requirement(xapiVerb, InputTrigger);
+                //ValueInput locale = ValueInput(typeof(string), "locale");
+                //XAPIArguments.Add(locale);
+                //Requirement(locale, InputTrigger);
+                ValueInput contextInput = Arguments.FirstOrDefault(x => x.key == "context");
+                if (contextInput == null)
+                {
+                    contextInput = ValueInput(typeof(string), "context");
+                    XAPIArguments.Add(contextInput);
+                }
+                Requirement(contextInput, InputTrigger);
             }
 
             //CustomObjects = new List<ValueInput>();
