@@ -58,14 +58,6 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
         [PortLabelHidden]
         public ControlOutput OutputTrigger { get; private set; }
 
-        private GameObject gameObject;
-
-        public override void Instantiate(GraphReference instance)
-        {
-            base.Instantiate(instance);
-
-            gameObject = instance.gameObject;
-        }
 
         protected override void Definition()
         {
@@ -115,13 +107,13 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
                     }
                     catch (Exception exception)
                     {
-                        string message = $"Error during execution of \"{UNIT_TITLE}\" on gameObject {gameObject}: {exception.Message} ";
+                        string message = $"Error during execution of \"{UNIT_TITLE}\": {exception.Message} ";
                         if (IAnalyticsSystem.VerbsTypes[EAnalyticType.Experience].Contains(Verb))
                         {
                             message = message +
                             $"Remember to call the node {AnalyticGenerateExperienceIDUnit.UNIT_TITLE} to generate the ExperienceID before trying to send Analytics data!";
                         }
-                        Debug.LogError(message, gameObject);
+                        Debug.LogError(message);
                     }
                 }
                 else

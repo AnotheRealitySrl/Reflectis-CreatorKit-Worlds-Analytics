@@ -1,4 +1,3 @@
-using Reflectis.CreatorKit.Worlds.Analytics;
 using Reflectis.SDK.Core.Utilities;
 
 using System;
@@ -39,13 +38,10 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
         public ValueOutput DisplayableData { get; private set; }
 
 
-        private GameObject gameObject;
 
         public override void Instantiate(GraphReference instance)
         {
             base.Instantiate(instance);
-
-            gameObject = instance.gameObject;
         }
 
         protected override void Definition()
@@ -85,8 +81,8 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
                         }
                         catch (Exception exception)
                         {
-                            string message = $"Error during execution of \"{UNIT_TITLE}\" on gameObject {gameObject} validity check failed with message: {exception.Message} ";
-                            Debug.LogError(message, gameObject);
+                            string message = $"Error during execution of \"{UNIT_TITLE}\" validity check failed with message: {exception.Message} ";
+                            Debug.LogError(message);
                         }
                     }
                     else
