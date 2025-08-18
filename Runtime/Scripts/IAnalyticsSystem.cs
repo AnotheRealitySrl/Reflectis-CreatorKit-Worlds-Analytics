@@ -1,5 +1,7 @@
 
 using Reflectis.SDK.Core.SystemFramework;
+using Reflectis.SDK.ReflectisApi;
+
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -57,7 +59,7 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
             };
 
         public static Dictionary<EAnalyticsDisplayableType, Type> DisplayableDataTypes =
-            new Dictionary<EAnalyticsDisplayableType, Type>
+            new()
             {
                 {
                     EAnalyticsDisplayableType.Dynamic,
