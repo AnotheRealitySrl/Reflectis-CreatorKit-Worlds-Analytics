@@ -1,12 +1,18 @@
 # Release notes
 
+## v3.0.0
+
+### Removed
+
+- Removed Analytics DTOs to Reflectis-SDK-Core.
+
 ## v2.0.0
 
-### Changed 
+### Changed
 
 - Change `EventId` in `SessionId` in `AnalyticDTO`.
 
-### Added 
+### Added
 
 - Add `ScriptDefineSysmbols` utility class to addin the string "REFLECTIS_CREATOR_KIT_WORLDS_ANALYTICS".
 
