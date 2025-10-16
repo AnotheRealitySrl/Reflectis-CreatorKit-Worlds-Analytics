@@ -1,5 +1,11 @@
 # Release notes
 
+## v3.0.1
+
+### Fixed
+
+- Fix context field on send data xApi.
+
 ## v3.0.0
 
 ### Removed
