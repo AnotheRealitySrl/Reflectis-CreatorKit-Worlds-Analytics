@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66dff487dd3d86f45b8a5d06fd4d9a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uniqueID: 2011522307
+  uniqueID: 44508524
 --- !u!114 &6474086798047248739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,7 +353,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.VisualScripting.Core::Unity.VisualScripting.Variables
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"FlowObjectList","value":{"$content":[{"$content":0,"$type":"UnityEngine.Object"},{"$content":1,"$type":"UnityEngine.Object"}],"$type":"Unity.VisualScripting.AotList"},"typeHandle":{"Identification":"Unity.VisualScripting.AotList,
-      Unity.VisualScripting.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"isCorrect","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+      Unity.VisualScripting.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"disableOnComplete","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"particleOnComplete","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"isCorrect","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"hoverUI","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"highlightOnHover","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"highlightOnSelected","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
@@ -417,7 +419,9 @@ MonoBehaviour:
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"DescriptionCanvas","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"CompletedCheck","value":{"$content":4,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"HoverHighlightItem","value":{"$content":5,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.MonoBehaviour,
-      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"SelectHighlightItem","value":{"$content":6,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.MonoBehaviour,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"DestroyParticle","value":{"$content":6,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"SelectHighlightItem","value":{"$content":7,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.MonoBehaviour,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"ModelReference","value":{"$content":8,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 6983307962259112403}
@@ -426,7 +430,9 @@ MonoBehaviour:
     - {fileID: 6573421937289300839}
     - {fileID: 278653216369163974}
     - {fileID: 6513980226516653507}
+    - {fileID: 4043784574792599651, guid: 9be76bbef8e6809428aab31d1cb6cdca, type: 3}
     - {fileID: 6513980226516653507}
+    - {fileID: 3692085939879912867}
 --- !u!1 &5911368379729688381
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,7 +623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66dff487dd3d86f45b8a5d06fd4d9a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uniqueID: 2011522307
+  uniqueID: 485554611
 --- !u!114 &449415660814158261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,7 +930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66dff487dd3d86f45b8a5d06fd4d9a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Core::Reflectis.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
-  uniqueID: 665549560
+  uniqueID: 1814040101
 --- !u!114 &7942899244690947391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1113,7 +1119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66dff487dd3d86f45b8a5d06fd4d9a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uniqueID: 1816614729
+  uniqueID: 658095745
 --- !u!114 &3925162424239175782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1282,7 +1288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66dff487dd3d86f45b8a5d06fd4d9a1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uniqueID: 1816614729
+  uniqueID: 1897850315
 --- !u!114 &6083419708099510032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1393,7 +1399,7 @@ PrefabInstance:
     - target: {fileID: 1716112352009789316, guid: 0d0d47de61f3da146911b26ecdd28c38,
         type: 3}
       propertyPath: uniqueID
-      value: 2001143101
+      value: 2005287954
       objectReference: {fileID: 0}
     - target: {fileID: 4652688378556539744, guid: 0d0d47de61f3da146911b26ecdd28c38,
         type: 3}
@@ -1840,7 +1846,7 @@ PrefabInstance:
     - target: {fileID: 6647099247407494392, guid: e021b33a9546fa5469d44dc7c7c066da,
         type: 3}
       propertyPath: uniqueID
-      value: 1777496597
+      value: 1479638374
       objectReference: {fileID: 0}
     - target: {fileID: 8292161382050203143, guid: e021b33a9546fa5469d44dc7c7c066da,
         type: 3}
@@ -2028,7 +2034,7 @@ PrefabInstance:
     - target: {fileID: 6647099247407494392, guid: e021b33a9546fa5469d44dc7c7c066da,
         type: 3}
       propertyPath: uniqueID
-      value: 1777496597
+      value: 40776839
       objectReference: {fileID: 0}
     - target: {fileID: 8142648780353907823, guid: e021b33a9546fa5469d44dc7c7c066da,
         type: 3}
