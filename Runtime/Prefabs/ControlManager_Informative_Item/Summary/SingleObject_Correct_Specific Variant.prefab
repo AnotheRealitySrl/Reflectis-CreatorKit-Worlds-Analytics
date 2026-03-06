@@ -283,6 +283,11 @@ PrefabInstance:
       propertyPath: '_data._objectReferences.Array.data[8]'
       value: 
       objectReference: {fileID: 5954412803037286927}
+    - target: {fileID: 4549833404408575155, guid: 81bbec919d6e26047b96aa479bbb93ba,
+        type: 3}
+      propertyPath: m_PixelsPerUnitMultiplier
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4746122463921913486, guid: 81bbec919d6e26047b96aa479bbb93ba,
         type: 3}
       propertyPath: m_AnchorMax.y
