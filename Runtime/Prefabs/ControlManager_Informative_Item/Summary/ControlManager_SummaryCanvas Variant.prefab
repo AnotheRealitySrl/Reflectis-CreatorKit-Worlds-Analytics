@@ -1368,6 +1368,8 @@ GameObject:
   - component: {fileID: 1908350992335427043}
   - component: {fileID: 7747988561474132656}
   - component: {fileID: 1068298519956996652}
+  - component: {fileID: 5284320812477787951}
+  - component: {fileID: 928256211959894806}
   m_Layer: 7
   m_Name: HintsTitle
   m_TagString: Untagged
@@ -1494,6 +1496,34 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5284320812477787951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2910423780643888765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66dff487dd3d86f45b8a5d06fd4d9a1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Core::Reflectis.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
+  uniqueID: 1319095056
+--- !u!114 &928256211959894806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2910423780643888765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9e9cf71b7291944e91dcdd17bf7f74c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Placeholders::Reflectis.CreatorKit.Worlds.Placeholders.LocalizationPlaceholder
+  automaticSetup: 1
+  key: Summary/HintsTitle
+  textField: {fileID: 1068298519956996652}
 --- !u!1 &2934093590915019592
 GameObject:
   m_ObjectHideFlags: 0
@@ -3390,6 +3420,8 @@ GameObject:
   - component: {fileID: 5044978617732156142}
   - component: {fileID: 4103237893900980775}
   - component: {fileID: 4239833814936542570}
+  - component: {fileID: 3077239468650874576}
+  - component: {fileID: 3169424662775667578}
   m_Layer: 7
   m_Name: AnswersTitle
   m_TagString: Untagged
@@ -3516,6 +3548,34 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &3077239468650874576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7305551034511280286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66dff487dd3d86f45b8a5d06fd4d9a1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Core::Reflectis.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
+  uniqueID: 1714610412
+--- !u!114 &3169424662775667578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7305551034511280286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9e9cf71b7291944e91dcdd17bf7f74c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Placeholders::Reflectis.CreatorKit.Worlds.Placeholders.LocalizationPlaceholder
+  automaticSetup: 1
+  key: Summary/CorrectAnswers
+  textField: {fileID: 4239833814936542570}
 --- !u!1 &7432196371905810964
 GameObject:
   m_ObjectHideFlags: 0
@@ -4159,6 +4219,8 @@ GameObject:
   - component: {fileID: 4816439188996720134}
   - component: {fileID: 4812807184516435378}
   - component: {fileID: 8380470904583658203}
+  - component: {fileID: 3586751085594606133}
+  - component: {fileID: 3016535546122726802}
   m_Layer: 7
   m_Name: WrongTitle
   m_TagString: Untagged
@@ -4285,6 +4347,34 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &3586751085594606133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7983275731920474755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66dff487dd3d86f45b8a5d06fd4d9a1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Core::Reflectis.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
+  uniqueID: 1498816176
+--- !u!114 &3016535546122726802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7983275731920474755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9e9cf71b7291944e91dcdd17bf7f74c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Placeholders::Reflectis.CreatorKit.Worlds.Placeholders.LocalizationPlaceholder
+  automaticSetup: 1
+  key: Summary/WrongTitle
+  textField: {fileID: 8380470904583658203}
 --- !u!1 &8061281263763174995
 GameObject:
   m_ObjectHideFlags: 0
