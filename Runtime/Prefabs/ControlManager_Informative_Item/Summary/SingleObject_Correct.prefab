@@ -1507,6 +1507,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2362645762784999405}
     m_Modifications:
+    - target: {fileID: 17098995512363829, guid: e021b33a9546fa5469d44dc7c7c066da,
+        type: 3}
+      propertyPath: key
+      value: Button/QuizDetails
+      objectReference: {fileID: 0}
     - target: {fileID: 2034338845665839163, guid: e021b33a9546fa5469d44dc7c7c066da,
         type: 3}
       propertyPath: m_text
