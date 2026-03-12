@@ -85,6 +85,7 @@ MonoBehaviour:
   titleLabel: Quiz
   descriptionLabel: 
   questionLabel: 
+  showFeedbackOnCorrectAnswer: 0
   allowMultipleSelection: 0
   minSelectableAnswers: 0
   maxSelectableAnswers: 100
@@ -1084,6 +1085,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5042443766066158554, guid: 7a963a304ceb9c842a149f8aa65dcb32,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.965
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042443766066158554, guid: 7a963a304ceb9c842a149f8aa65dcb32,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.965
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042443766066158554, guid: 7a963a304ceb9c842a149f8aa65dcb32,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.965
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042443766066158554, guid: 7a963a304ceb9c842a149f8aa65dcb32,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1131,6 +1147,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042443766066158554, guid: 7a963a304ceb9c842a149f8aa65dcb32,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5144599504826107598, guid: 7a963a304ceb9c842a149f8aa65dcb32,
         type: 3}
