@@ -1,5 +1,11 @@
 # Release notes
 
+## v3.1.1
+
+#### Added
+
+- Added control manager and various prefabs to handle a small ready to use interactive experience. 
+
 ## v3.0.1
 
 ### Fixed
