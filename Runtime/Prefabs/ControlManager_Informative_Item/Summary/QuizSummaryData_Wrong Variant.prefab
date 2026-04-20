@@ -250,7 +250,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1.8
+  m_PixelsPerUnitMultiplier: 3
 --- !u!1 &7926857986464213593
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1.8
+  m_PixelsPerUnitMultiplier: 3
 --- !u!1001 &7751327818918902376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -671,6 +671,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5641938640292653987, guid: 051bd6a2967475741ae4fad5c11871ee,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 5766002727733417661, guid: 051bd6a2967475741ae4fad5c11871ee,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -700,6 +705,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336047764420519486, guid: 051bd6a2967475741ae4fad5c11871ee,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 6770090758992431858, guid: 051bd6a2967475741ae4fad5c11871ee,
         type: 3}
