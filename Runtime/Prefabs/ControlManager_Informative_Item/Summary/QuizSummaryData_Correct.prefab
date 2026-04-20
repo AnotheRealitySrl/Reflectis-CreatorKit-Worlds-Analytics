@@ -68,7 +68,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cbc969f1df63a3942b30321b60590790, type: 2}
-  m_sharedMaterial: {fileID: -7337024400575987422, guid: cbc969f1df63a3942b30321b60590790, type: 2}
+  m_sharedMaterial: {fileID: -7337024400575987422, guid: cbc969f1df63a3942b30321b60590790,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -242,7 +243,8 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cbc969f1df63a3942b30321b60590790, type: 2}
-  m_sharedMaterial: {fileID: -7337024400575987422, guid: cbc969f1df63a3942b30321b60590790, type: 2}
+  m_sharedMaterial: {fileID: -7337024400575987422, guid: cbc969f1df63a3942b30321b60590790,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -321,6 +323,7 @@ GameObject:
   - component: {fileID: 3592581763092970134}
   - component: {fileID: 182480438093515560}
   - component: {fileID: 5641938640292653987}
+  - component: {fileID: 9159500631679766321}
   m_Layer: 7
   m_Name: Title
   m_TagString: Untagged
@@ -378,7 +381,8 @@ MonoBehaviour:
   m_text: QuestionTitlet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3537fd1eff157ad48b3b4cb33bd9ef11, type: 2}
-  m_sharedMaterial: {fileID: -1189898940912890577, guid: 3537fd1eff157ad48b3b4cb33bd9ef11, type: 2}
+  m_sharedMaterial: {fileID: -1189898940912890577, guid: 3537fd1eff157ad48b3b4cb33bd9ef11,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -446,6 +450,20 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &9159500631679766321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825224150969995909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &2467529527292685437
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,7 +701,8 @@ MonoBehaviour:
   m_text: Domanda
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cbc969f1df63a3942b30321b60590790, type: 2}
-  m_sharedMaterial: {fileID: -7337024400575987422, guid: cbc969f1df63a3942b30321b60590790, type: 2}
+  m_sharedMaterial: {fileID: -7337024400575987422, guid: cbc969f1df63a3942b30321b60590790,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
