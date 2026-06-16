@@ -1,5 +1,11 @@
 # Release notes
 
+## v3.1.2
+
+### Fixed
+- Multiple fixes on the quiz summary (sizes, dimensions, button, text size).
+- Fixed control manager score display and analytics.
+
 ## v3.1.1
 
 #### Added
