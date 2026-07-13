@@ -69,6 +69,8 @@ namespace Reflectis.CreatorKit.Worlds.Analytics
 
         Task GenerateExperienceGUID(string key);
 
+        string GenerateUniqueExperienceGUIDXPlayer(string key);
+
         void SendAnalytic(EAnalyticVerb verb, AnalyticDTO AnalyticDTO);
     }
 }
