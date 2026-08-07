@@ -1,5 +1,10 @@
 # Release notes
 
+## v3.2.0
+
+### Added
+- Added `GenerateUniqueExperienceGUIDXPlayer(string key)` to `IAnalyticsSystem`, for a per-player unique experience GUID.
+
 ## v3.1.2
 
 ### Fixed
