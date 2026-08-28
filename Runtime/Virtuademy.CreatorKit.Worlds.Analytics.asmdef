@@ -1,6 +1,6 @@
 {
-    "name": "Reflectis.CreatorKit.Worlds.Analytics",
-    "rootNamespace": "Reflectis.CreatorKit.Worlds.Analytics",
+    "name": "Virtuademy.CreatorKit.Worlds.Analytics",
+    "rootNamespace": "Virtuademy.CreatorKit.Worlds.Analytics",
     "references": [
         "GUID:e1e4f83f6c2796445b9ea45a4dca9090",
         "GUID:ab59f74e483e1ee4595bfefea56493f2",

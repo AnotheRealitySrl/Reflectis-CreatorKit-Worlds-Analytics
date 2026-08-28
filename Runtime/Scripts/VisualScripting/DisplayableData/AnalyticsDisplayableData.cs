@@ -1,4 +1,4 @@
-namespace Reflectis.CreatorKit.Worlds.Analytics
+namespace Virtuademy.CreatorKit.Worlds.Analytics
 {
     public class AnalyticsDisplayableData
     {

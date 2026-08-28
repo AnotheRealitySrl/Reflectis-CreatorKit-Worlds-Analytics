@@ -1,12 +1,12 @@
-using Reflectis.SDK.Core.Utilities;
-using Reflectis.SDK.ReflectisApi;
+using Virtuademy.SDK.Core.Utilities;
+using Virtuademy.SDK.PlatformApi;
 
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Reflectis.CreatorKit.Worlds.Analytics
+namespace Virtuademy.CreatorKit.Worlds.Analytics
 {
     public class DynamicDisplayableContent : DisplayableContentBase
     {

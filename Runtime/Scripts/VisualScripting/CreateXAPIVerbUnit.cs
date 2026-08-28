@@ -1,9 +1,9 @@
-using Reflectis.SDK.Core;
-using Reflectis.SDK.ReflectisApi;
+using Virtuademy.SDK.Core;
+using Virtuademy.SDK.PlatformApi;
 
 using Unity.VisualScripting;
 
-namespace Reflectis.CreatorKit.Worlds.Analytics
+namespace Virtuademy.CreatorKit.Worlds.Analytics
 {
     [UnitTitle("Reflectis Create:" + nameof(XAPIVerb))]
     [UnitSurtitle(nameof(XAPIVerb))]

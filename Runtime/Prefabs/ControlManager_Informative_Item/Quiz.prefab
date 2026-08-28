@@ -1216,7 +1216,7 @@ PrefabInstance:
     - target: {fileID: 5768381514134167246, guid: 7a963a304ceb9c842a149f8aa65dcb32,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Reflectis.SDK.Tasks.Task, Reflectis.SDK.Tasks
+      value: Virtuademy.SDK.Tasks.Task, Virtuademy.SDK.Tasks
       objectReference: {fileID: 0}
     - target: {fileID: 5768381514134167246, guid: 7a963a304ceb9c842a149f8aa65dcb32,
         type: 3}
@@ -1345,7 +1345,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66dff487dd3d86f45b8a5d06fd4d9a1c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Core::Reflectis.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.Core::Virtuademy.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
   uniqueID: 1353090527
 --- !u!4 &7413522171032445950 stripped
 Transform:

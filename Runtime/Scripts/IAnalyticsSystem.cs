@@ -1,12 +1,12 @@
 
-using Reflectis.SDK.Core.SystemFramework;
-using Reflectis.SDK.ReflectisApi;
+using Virtuademy.SDK.Core.SystemFramework;
+using Virtuademy.SDK.PlatformApi;
 
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Reflectis.CreatorKit.Worlds.Analytics
+namespace Virtuademy.CreatorKit.Worlds.Analytics
 {
     public interface
 

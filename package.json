@@ -1,6 +1,6 @@
 {
-  "name": "com.anotherealitysrl.reflectis-creatorkit-worlds-analytics",
-  "displayName": "Reflectis-CreatorKit-Worlds-Analytics",
+  "name": "com.anotherealitysrl.virtuademy-creatorkit-worlds-analytics",
+  "displayName": "Virtuademy-CreatorKit-Worlds-Analytics",
   "version": "3.2.0",
   "unity": "2020.1",
   "description": "Reflectis CreatorKit Worlds Analytics module",
@@ -10,6 +10,6 @@
   "category": "Unity",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AnotheRealitySrl/Reflectis-CreatorKit-Worlds-Analytics"
+    "url": "https://github.com/AnotheRealitySrl/Virtuademy-CreatorKit-Worlds-Analytics"
   }
 }

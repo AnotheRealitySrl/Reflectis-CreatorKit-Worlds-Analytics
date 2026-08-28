@@ -195,7 +195,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7aced908ceb3953488d4b9d1e7d82447, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Placeholders::Reflectis.CreatorKit.Worlds.Placeholders.Informative_Highlight
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.Placeholders::Virtuademy.CreatorKit.Worlds.Placeholders.Informative_Highlight
 --- !u!1001 &3375411535960893295
 PrefabInstance:
   m_ObjectHideFlags: 0

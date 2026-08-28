@@ -1506,7 +1506,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66dff487dd3d86f45b8a5d06fd4d9a1c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Core::Reflectis.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.Core::Virtuademy.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
   uniqueID: 1319095056
 --- !u!114 &928256211959894806
 MonoBehaviour:
@@ -1519,7 +1519,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9e9cf71b7291944e91dcdd17bf7f74c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Placeholders::Reflectis.CreatorKit.Worlds.Placeholders.LocalizationPlaceholder
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.Placeholders::Virtuademy.CreatorKit.Worlds.Placeholders.LocalizationPlaceholder
   automaticSetup: 1
   key: Summary/HintsTitle
   textField: {fileID: 1068298519956996652}
@@ -3558,7 +3558,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66dff487dd3d86f45b8a5d06fd4d9a1c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Core::Reflectis.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.Core::Virtuademy.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
   uniqueID: 1714610412
 --- !u!114 &3169424662775667578
 MonoBehaviour:
@@ -3571,7 +3571,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9e9cf71b7291944e91dcdd17bf7f74c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Placeholders::Reflectis.CreatorKit.Worlds.Placeholders.LocalizationPlaceholder
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.Placeholders::Virtuademy.CreatorKit.Worlds.Placeholders.LocalizationPlaceholder
   automaticSetup: 1
   key: Summary/CorrectAnswers
   textField: {fileID: 4239833814936542570}
@@ -4357,7 +4357,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66dff487dd3d86f45b8a5d06fd4d9a1c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Core::Reflectis.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.Core::Virtuademy.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
   uniqueID: 1498816176
 --- !u!114 &3016535546122726802
 MonoBehaviour:
@@ -4370,7 +4370,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9e9cf71b7291944e91dcdd17bf7f74c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Placeholders::Reflectis.CreatorKit.Worlds.Placeholders.LocalizationPlaceholder
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.Placeholders::Virtuademy.CreatorKit.Worlds.Placeholders.LocalizationPlaceholder
   automaticSetup: 1
   key: Summary/WrongTitle
   textField: {fileID: 8380470904583658203}

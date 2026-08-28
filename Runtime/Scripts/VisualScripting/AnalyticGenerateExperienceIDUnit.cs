@@ -1,6 +1,6 @@
-using Reflectis.SDK.Core.SystemFramework;
-using Reflectis.CreatorKit.Worlds.Analytics;
-using Reflectis.SDK.Core.VisualScripting;
+using Virtuademy.SDK.Core.SystemFramework;
+using Virtuademy.CreatorKit.Worlds.Analytics;
+using Virtuademy.SDK.Core.VisualScripting;
 
 using System.Threading.Tasks;
 
@@ -8,7 +8,7 @@ using Unity.VisualScripting;
 
 using UnityEngine;
 
-namespace Reflectis.CreatorKit.Worlds.Analytics
+namespace Virtuademy.CreatorKit.Worlds.Analytics
 {
     [UnitTitle(UNIT_TITLE)]
     [UnitSurtitle("Reflectis Analytic")]

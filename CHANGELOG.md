@@ -27,7 +27,7 @@
 
 ### Removed
 
-- Removed Analytics DTOs to Reflectis-SDK-Core.
+- Removed Analytics DTOs to Virtuademy-SDK-Core.
 
 ## v2.0.0
 

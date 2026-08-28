@@ -84,7 +84,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66dff487dd3d86f45b8a5d06fd4d9a1c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Core::Reflectis.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.Core::Virtuademy.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
   uniqueID: 2123081512
 --- !u!114 &6199486189825625549
 MonoBehaviour:
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 982d4b6656cc8ad42b174b929bdfb5f4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.VisualScripting::Reflectis.CreatorKit.Worlds.VisualScripting.SyncedObject
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.VisualScripting::Virtuademy.CreatorKit.Worlds.VisualScripting.SyncedObject
   automaticSetup: 1
   <IsNetworked>k__BackingField: 1
   ownershipRequestType: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1c6ae009709eed43a96051c4eee57d7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.VisualScripting::Reflectis.CreatorKit.Worlds.VisualScripting.SyncedVariables
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.VisualScripting::Virtuademy.CreatorKit.Worlds.VisualScripting.SyncedVariables
   variableSettings:
   - id: 0
     name: isIDGenerated

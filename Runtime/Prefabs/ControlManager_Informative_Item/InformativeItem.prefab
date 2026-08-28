@@ -306,7 +306,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7aced908ceb3953488d4b9d1e7d82447, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Placeholders::Reflectis.CreatorKit.Worlds.Placeholders.Informative_Highlight
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.Placeholders::Virtuademy.CreatorKit.Worlds.Placeholders.Informative_Highlight
   highlightMaterial:
   - {fileID: 2100000, guid: 91dbe4bad56dbc445996c8273995b157, type: 2}
   - {fileID: 2100000, guid: cccc8dcb28d6e1a41880c8bc478ea7db, type: 2}
@@ -838,7 +838,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e684779248ebb6045a0216844615e617, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Core::Reflectis.InformativeItem_Placeholder
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.Core::Virtuademy.InformativeItem_Placeholder
   onTaskStart:
     m_PersistentCalls:
       m_Calls: []
@@ -932,7 +932,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66dff487dd3d86f45b8a5d06fd4d9a1c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Core::Reflectis.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.Core::Virtuademy.CreatorKit.Worlds.Core.Placeholders.SceneObjectId
   uniqueID: 162750109
 --- !u!114 &7942899244690947391
 MonoBehaviour:
@@ -945,7 +945,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca6b7c0dfe18a8044a728cd73d0a69a2, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.Placeholders::Reflectis.CreatorKit.Worlds.Placeholders.InteractablePlaceholder
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.Placeholders::Virtuademy.CreatorKit.Worlds.Placeholders.InteractablePlaceholder
   automaticSetup: 1
   <IsNetworked>k__BackingField: 1
   interactWithColliders: 1
@@ -963,7 +963,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 710a7f3a1f5169c4190ec0c12daeac19, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Reflectis.CreatorKit.Worlds.VisualScripting::Reflectis.CreatorKit.Worlds.VisualScripting.VisualScriptingInteractablePlaceholder
+  m_EditorClassIdentifier: Virtuademy.CreatorKit.Worlds.VisualScripting::Virtuademy.CreatorKit.Worlds.VisualScripting.VisualScriptingInteractablePlaceholder
   automaticSetup: 1
   interactionsScriptMachine: {fileID: 282834640298155273}
   desktopAllowedStates: -1

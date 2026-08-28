@@ -1,7 +1,7 @@
-using Reflectis.SDK.Core.Editor;
+using Virtuademy.SDK.Core.Editor;
 using UnityEditor;
 
-namespace Reflectis.CreatorKit.Worlds.Analytics.Editor
+namespace Virtuademy.CreatorKit.Worlds.Analytics.Editor
 {
     [InitializeOnLoad]
     public class ScriptDefineSymbols
